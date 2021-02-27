@@ -2,9 +2,15 @@
   "name": "root",
   "private": true,
   "description": "XChainJS Chain Clients MonoRepo",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@vue/cli-plugin-eslint",
+      "**/@vue/cli-plugin-eslint/**"
+    ]
+  },
   "scripts": {
     "clean": "lerna run clean",
     "build": "lerna run build",

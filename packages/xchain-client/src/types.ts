@@ -32,6 +32,7 @@ export type Tx = {
   date: Date // timestamp of tx
   type: TxType // type
   hash: string // Tx hash
+  input?: string
 }
 
 export type Txs = Tx[]
